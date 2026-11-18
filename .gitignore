@@ -1,0 +1,4 @@
+# Build output: scripts/build.py renders src/ into site/,
+# scripts/sync-freex.sh adds logo, screenshots and release.json from the FreeX repos.
+site/
+.freex/

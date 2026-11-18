@@ -1,0 +1,71 @@
+name: Deploy website
+
+# The site is rebuilt whenever this repo changes and regularly in between,
+# so new screenshots, logos and releases of the FreeX apps show up on
+# freex.mirranet.de without anyone touching this repo.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 */3 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [freex-updated]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check out FreeX Media Server (logo, screenshots)
+        uses: actions/checkout@v5
+        with:
+          repository: FreeX-Studio/Freex-Media-Server
+          path: .freex/server
+          sparse-checkout: |
+            docs/brand
+            docs/screenshots
+
+      - name: Check out FreeX for Kodi (screenshots)
+        uses: actions/checkout@v5
+        with:
+          repository: FreeX-Studio/FreeX-Kodi-Addon
+          path: .freex/kodi
+          sparse-checkout: |
+            docs/screenshots
+
+      - name: Build pages (English and German)
+        run: python3 scripts/build.py site
+
+      - name: Sync logo, screenshots and release info
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          chmod +x scripts/sync-freex.sh
+          scripts/sync-freex.sh .freex site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
