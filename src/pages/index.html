@@ -2,9 +2,9 @@
 <html lang="{{lang}}" data-base="{{base}}">
 <head>
   <title>{{de}}FreeX – Ihr eigener Medienserver für Filme und Serien{{en}}FreeX – Your own media server for movies and TV shows{{/}}</title>
-  <meta name="description" content="{{de}}FreeX ist ein selbst gehostetes Open-Source-Mediensystem: ein Server auf Ihrer eigenen Hardware und Apps für Browser, TV, Smartphone, Desktop und Kodi. Kein Konto bei Dritten, keine Cloud, keine Telemetrie.{{en}}FreeX is a self-hosted, open-source media system: one server on your own hardware and apps for the browser, TV, phone, desktop and Kodi. No third-party account, no cloud, no telemetry.{{/}}">
-  <meta property="og:title" content="{{de}}FreeX – Your Media. Your Server. Your Freedom.{{en}}FreeX – Your Media. Your Server. Your Freedom.{{/}}">
-  <meta property="og:description" content="{{de}}Selbst gehosteter Medienserver mit Apps für jeden Bildschirm im Haus.{{en}}A self-hosted media server with apps for every screen in the house.{{/}}">
+  <meta name="description" content="{{de}}FreeX ist ein Medienserver für Filme und Serien, den Sie selbst betreiben – mit Apps für Fernseher, Handy, PC, Kodi und den Browser. Kostenlos und Open Source.{{en}}FreeX is a media server for movies and TV shows that you run yourself – with apps for your TV, phone, PC, Kodi and the browser. Free and open source.{{/}}">
+  <meta property="og:title" content="FreeX – Your Media. Your Server. Your Freedom.">
+  <meta property="og:description" content="{{de}}Ihr eigener Medienserver für Filme und Serien.{{en}}Your own media server for movies and TV shows.{{/}}">
   <meta property="og:image" content="https://freex.mirranet.de/assets/brand/social-preview.png">
   <meta property="og:url" content="{{url:{{lang}}}}">
   <link rel="canonical" href="{{url:{{lang}}}}">
@@ -17,29 +17,28 @@
     <section class="hero">
       <div class="wrap">
         <div class="hero__text">
-          <p class="eyebrow">{{de}}Selbst gehostet · Open Source · Ohne Cloud{{en}}Self-hosted · Open source · No cloud{{/}}</p>
           <h1>Your Media.<br>Your Server.<br><span class="grad">Your Freedom.</span></h1>
-          <p class="hero__lede">{{de}}FreeX macht aus Ihren Ordnern mit Filmen und Serien eine Bibliothek mit Bildern und Infos – auf Ihrer eigenen Hardware. Ein Server, Apps für jeden Bildschirm im Haus, und alle merken sich, wo Sie aufgehört haben. Kein Konto bei Dritten, keine Cloud, keine Telemetrie.{{en}}FreeX turns your folders of movies and TV shows into a library with artwork and details – on your own hardware. One server, apps for every screen in the house, and all of them remember where you stopped. No third-party account, no cloud, no telemetry.{{/}}</p>
+          <p class="hero__lede">{{de}}FreeX ist ein Medienserver, den Sie selbst betreiben. Sie geben ihm Ihre Film- und Serienordner, er macht daraus eine Bibliothek mit Postern, Beschreibungen und Besetzung. Schauen können Sie dann auf dem Fernseher, dem Handy, dem PC oder im Browser.{{en}}FreeX is a media server you run yourself. Point it at your movie and TV folders and it turns them into a library with posters, descriptions and cast. Then watch on your TV, your phone, your PC or in the browser.{{/}}</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#download">{{de}}FreeX installieren{{en}}Install FreeX{{/}}</a>
-            <a class="btn btn--ghost" href="https://github.com/FreeX-Studio">{{de}}Quellcode auf GitHub{{en}}Source code on GitHub{{/}}</a>
+            <a class="btn btn--ghost" href="https://github.com/FreeX-Studio">GitHub</a>
           </div>
         </div>
 
         <div class="tour" data-tour>
           <div class="tour__bar">
-            <div class="tour__tabs" role="tablist" aria-label="{{de}}FreeX ansehen{{en}}Take a look at FreeX{{/}}">
-              <button role="tab" aria-selected="true" data-shot="web-home.png" data-caption="{{de}}Startseite mit „Weiterschauen“, „Als Nächstes“ und „Kürzlich hinzugefügt“.{{en}}The home screen with Continue watching, Up next and Recently added.{{/}}">{{de}}Startseite{{en}}Home{{/}}</button>
-              <button role="tab" aria-selected="false" tabindex="-1" data-shot="web-library.png" data-caption="{{de}}Die Filmbibliothek als Poster-Raster mit A–Z-Leiste.{{en}}The movie library as a poster grid with the A–Z bar.{{/}}">{{de}}Bibliothek{{en}}Library{{/}}</button>
-              <button role="tab" aria-selected="false" tabindex="-1" data-shot="web-movie.png" data-caption="{{de}}Filmseite mit Besetzung, Medieninfos und Weiterschauen.{{en}}A movie page with cast, media info and resume.{{/}}">{{de}}Film{{en}}Movie{{/}}</button>
-              <button role="tab" aria-selected="false" tabindex="-1" data-shot="web-show.png" data-caption="{{de}}Serienseite mit Staffeln und Episoden.{{en}}A TV show page with its seasons and episodes.{{/}}">{{de}}Serie{{en}}TV show{{/}}</button>
+            <div class="tour__tabs" role="tablist" aria-label="{{de}}Screenshots{{en}}Screenshots{{/}}">
+              <button role="tab" aria-selected="true" data-shot="web-home.png" data-caption="{{de}}Dort weiterschauen, wo Sie aufgehört haben.{{en}}Pick up where you left off.{{/}}">{{de}}Startseite{{en}}Home{{/}}</button>
+              <button role="tab" aria-selected="false" tabindex="-1" data-shot="web-library.png" data-caption="{{de}}Alle Filme auf einen Blick.{{en}}All your movies at a glance.{{/}}">{{de}}Bibliothek{{en}}Library{{/}}</button>
+              <button role="tab" aria-selected="false" tabindex="-1" data-shot="web-movie.png" data-caption="{{de}}Alles zum Film – auch, welche Tonspuren und Untertitel die Datei hat.{{en}}Everything about a movie – including which audio tracks and subtitles the file has.{{/}}">{{de}}Film{{en}}Movie{{/}}</button>
+              <button role="tab" aria-selected="false" tabindex="-1" data-shot="web-show.png" data-caption="{{de}}Staffeln und Folgen, gesehene sind markiert.{{en}}Seasons and episodes, with the ones you've seen marked.{{/}}">{{de}}Serie{{en}}TV show{{/}}</button>
               <span class="tour__sep" aria-hidden="true"></span>
-              <button role="tab" aria-selected="false" tabindex="-1" data-shot="kodi-home.jpg" data-caption="{{de}}FreeX für Kodi: Ihre Bibliothek im FreeX-Design, abgespielt mit Kodis eigenem Player.{{en}}FreeX for Kodi: your library in the FreeX design, played with Kodi's own player.{{/}}">Kodi</button>
+              <button role="tab" aria-selected="false" tabindex="-1" data-shot="kodi-home.jpg" data-caption="{{de}}Dieselbe Bibliothek in Kodi.{{en}}The same library in Kodi.{{/}}">Kodi</button>
             </div>
           </div>
           <figure class="tour__stage" role="tabpanel" aria-live="polite">
-            <img class="tour__img" src="{{base}}assets/screens/web-home.png" width="2880" height="1800" alt="{{de}}FreeX Web: Startseite{{en}}FreeX Web: home screen{{/}}" fetchpriority="high">
-            <figcaption class="tour__caption">{{de}}Startseite mit „Weiterschauen“, „Als Nächstes“ und „Kürzlich hinzugefügt“.{{en}}The home screen with Continue watching, Up next and Recently added.{{/}}</figcaption>
+            <img class="tour__img" src="{{base}}assets/screens/web-home.png" width="2880" height="1800" alt="{{de}}FreeX: Startseite{{en}}FreeX: home{{/}}" fetchpriority="high">
+            <figcaption class="tour__caption">{{de}}Dort weiterschauen, wo Sie aufgehört haben.{{en}}Pick up where you left off.{{/}}</figcaption>
           </figure>
         </div>
       </div>
@@ -47,134 +46,123 @@
 
     <section id="features" class="section">
       <div class="wrap">
-        <h2 class="section__title">{{de}}Alles, was ein Medienserver können muss.{{en}}Everything a media server should do.{{/}}</h2>
-        <p class="section__intro">{{de}}FreeX Media Server ist ein kleines, natives Programm ohne Laufzeitumgebung. Er bringt die Weboberfläche FreeX Web gleich mit – Sie brauchen nur einen Browser.{{en}}FreeX Media Server is one small native program without a runtime. It comes with the web client FreeX Web built in – all you need is a browser.{{/}}</p>
+        <h2 class="section__title">{{de}}Was FreeX kann{{en}}What FreeX does{{/}}</h2>
+        <p class="section__intro">{{de}}Die Weboberfläche ist im Server schon drin – zum Loslegen reicht ein Browser.{{en}}The web interface is built into the server, so a browser is all you need to get started.{{/}}</p>
 
         <div class="features">
           <article class="card">
-            <h3>{{de}}Eine schöne Bibliothek{{en}}A beautiful library{{/}}</h3>
-            <p>{{de}}Poster-Raster, Sammlungen, Playlists, Merkliste und Suche. Die Startseite zeigt, was Sie gerade schauen und was als Nächstes kommt.{{en}}Poster grids, collections, playlists, a watchlist and search. The home screen shows what you're watching and what's up next.{{/}}</p>
+            <h3>{{de}}Bilder und Infos von selbst{{en}}Artwork and details, automatically{{/}}</h3>
+            <p>{{de}}FreeX holt Poster, Beschreibungen und Besetzung von TMDB. Haben Sie schon <code>.nfo</code>-Dateien aus Kodi, nimmt es die.{{en}}FreeX fetches posters, descriptions and cast from TMDB. If you already have <code>.nfo</code> files from Kodi, it uses those.{{/}}</p>
           </article>
           <article class="card">
-            <h3>{{de}}Spielt alles ab{{en}}Plays everything{{/}}</h3>
-            <p>{{de}}Direkt, wenn das Gerät die Datei kann – sonst wandelt der Server sie mit ffmpeg live um, auf Wunsch mit Hardwarebeschleunigung (NVENC, Quick Sync, VAAPI).{{en}}Directly when the device can decode the file – otherwise the server converts it on the fly with ffmpeg, optionally with hardware acceleration (NVENC, Quick Sync, VAAPI).{{/}}</p>
+            <h3>{{de}}Spielt Ihre Dateien ab{{en}}Plays your files{{/}}</h3>
+            <p>{{de}}Kann ein Gerät eine Datei nicht abspielen, wandelt der Server sie beim Schauen um. Eine Grafikkarte hilft dabei, ist aber kein Muss.{{en}}If a device can't play a file, the server converts it while you watch. A graphics card helps, but you don't need one.{{/}}</p>
           </article>
           <article class="card">
-            <h3>{{de}}Metadaten, auch offline{{en}}Metadata, even offline{{/}}</h3>
-            <p>{{de}}Bilder und Infos von TMDB – oder komplett offline aus Kodi-<code>.nfo</code>-Dateien und lokalen Bildern.{{en}}Artwork and details from TMDB – or fully offline from Kodi <code>.nfo</code> files and local artwork.{{/}}</p>
+            <h3>{{de}}Intro überspringen{{en}}Skip the intro{{/}}</h3>
+            <p>{{de}}FreeX findet Intro und Abspann selbst. Ein Klick, und es geht mit der Folge oder der nächsten weiter.{{en}}FreeX finds intros and credits on its own. One click and you're back in the episode, or on to the next one.{{/}}</p>
           </article>
           <article class="card">
-            <h3>{{de}}Intro und Abspann überspringen{{en}}Skip intro and credits{{/}}</h3>
-            <p>{{de}}Automatisch am Ton erkannt, mit Countdown zur nächsten Episode.{{en}}Detected automatically from the audio, with a countdown to the next episode.{{/}}</p>
+            <h3>{{de}}Ein Konto pro Person{{en}}One account per person{{/}}</h3>
+            <p>{{de}}Jeder hat seinen eigenen Fortschritt und seine Sprachen für Ton und Untertitel. Sie legen fest, wer welche Bibliothek sieht.{{en}}Everyone gets their own progress and their own audio and subtitle languages. You decide who sees which library.{{/}}</p>
           </article>
           <article class="card">
-            <h3>{{de}}Für die ganze Familie{{en}}For the whole household{{/}}</h3>
-            <p>{{de}}Mehrere Benutzer mit eigenem Fortschritt, Verlauf, Profilbild und bevorzugter Audio- und Untertitelsprache. Bibliotheken teilen Sie ganz oder nur teilweise.{{en}}Multiple users with their own progress, history, profile picture and preferred audio and subtitle language. Share all libraries or only some.{{/}}</p>
+            <h3>{{de}}Gemeinsam schauen{{en}}Watch together{{/}}</h3>
+            <p>{{de}}Einen Film mit Freunden starten, die Ihren Server nutzen – er läuft bei allen gleichzeitig, auch wenn sie woanders sind.{{en}}Start a movie with friends who use your server. It plays in sync for everyone, even if they're somewhere else.{{/}}</p>
           </article>
           <article class="card">
-            <h3>{{de}}Gemeinsam schauen{{en}}Watch Together{{/}}</h3>
-            <p>{{de}}Synchron mit anderen Benutzern Ihres Servers schauen – egal, wo sie gerade sind.{{en}}Watch in sync with other users of your server – wherever they are.{{/}}</p>
+            <h3>{{de}}Sammlungen und Playlists{{en}}Collections and playlists{{/}}</h3>
+            <p>{{de}}Filmreihen landen beisammen. Dazu eigene Playlists und eine Merkliste für später.{{en}}Movie series are grouped together. Plus your own playlists and a watchlist for later.{{/}}</p>
           </article>
           <article class="card">
-            <h3>{{de}}Sicher von Haus aus{{en}}Secure by default{{/}}</h3>
-            <p>{{de}}Zwei-Faktor-Anmeldung, Schutz gegen Brute-Force, Sitzungen pro Gerät und strenge Sicherheits-Header.{{en}}Two-factor sign-in, brute-force protection, per-device sessions and strict security headers.{{/}}</p>
+            <h3>{{de}}Im Browser eingerichtet{{en}}Set up in the browser{{/}}</h3>
+            <p>{{de}}Ordner hinzufügen, Benutzer anlegen, Einstellungen ändern – alles in der Weboberfläche, ohne Konfigurationsdateien.{{en}}Add folders, create users, change settings – all in the web interface, no config files.{{/}}</p>
           </article>
           <article class="card">
-            <h3>{{de}}Im Browser verwaltet{{en}}Managed in the browser{{/}}</h3>
-            <p>{{de}}Bibliotheken, Benutzer und alle Servereinstellungen, eine Live-Aktivitätsansicht, CPU- und Speicher-Grafiken und das Server-Log.{{en}}Libraries, users and every server setting, a live activity view, CPU and memory graphs and the server log.{{/}}</p>
+            <h3>{{de}}Zweiter Faktor{{en}}Two-factor sign-in{{/}}</h3>
+            <p>{{de}}Ist Ihr Server aus dem Internet erreichbar, schützen Sie Konten zusätzlich mit einem Code aus einer Authenticator-App.{{en}}If your server is reachable from the internet, protect accounts with a code from an authenticator app.{{/}}</p>
           </article>
         </div>
 
         <div id="privacy" class="data-note">
           <h3>{{de}}Ihre Medien bleiben bei Ihnen{{en}}Your media stays with you{{/}}</h3>
-          <p>{{de}}FreeX läuft auf Ihrem Server, Ihrem NAS oder Ihrem PC. Es gibt kein Konto bei FreeX, keine Cloud dazwischen und keine Telemetrie. Ihre Dateien werden nur gelesen – FreeX löscht oder verändert nichts auf der Festplatte.{{en}}FreeX runs on your server, your NAS or your PC. There is no FreeX account, no cloud in between and no telemetry. Your files are only read – FreeX never deletes or changes anything on disk.{{/}}</p>
+          <p>{{de}}FreeX läuft auf Ihrer eigenen Hardware. Sie brauchen kein Konto bei uns, und der Server schickt nichts nach Hause. Ihre Dateien liest er nur – er löscht und ändert nichts.{{en}}FreeX runs on your own hardware. You don't need an account with us, and the server doesn't phone home. It only reads your files – it never deletes or changes them.{{/}}</p>
         </div>
       </div>
     </section>
 
     <section id="apps" class="section section--raised">
       <div class="wrap">
-        <h2 class="section__title">{{de}}Eine Familie für jeden Bildschirm.{{en}}One family for every screen.{{/}}</h2>
-        <p class="section__intro">{{de}}Alle Apps sprechen mit demselben Server und demselben Konto. Fortschritt, „Weiterschauen“ und Einstellungen wandern mit Ihnen von Gerät zu Gerät.{{en}}Every app talks to the same server with the same account. Progress, Continue watching and settings follow you from device to device.{{/}}</p>
+        <h2 class="section__title">{{de}}Auf jedem Bildschirm{{en}}On every screen{{/}}</h2>
+        <p class="section__intro">{{de}}Auf dem Fernseher anfangen, auf dem Handy weiterschauen – jede App weiß, wo Sie aufgehört haben.{{en}}Start on the TV, finish on your phone – every app knows where you stopped.{{/}}</p>
 
         <div class="apps">
           <article class="app app--core">
-            <p class="app__tag">{{de}}Der Kern{{en}}The core{{/}}</p>
+            <p class="app__tag">{{de}}Hier anfangen{{en}}Start here{{/}}</p>
             <h3>FreeX Media Server</h3>
-            <p>{{de}}Bibliotheken, Benutzer, Streaming, Umwandlung und die API – mit der Weboberfläche <strong>FreeX Web</strong> für jeden modernen Browser.{{en}}Libraries, users, streaming, conversion and the API – with the web client <strong>FreeX Web</strong> for every modern browser.{{/}}</p>
-            <p class="platforms"><span>Linux</span><span>Windows</span><span>{{de}}APT-Paketquelle{{en}}APT repository{{/}}</span></p>
-            <a class="app__link" href="https://github.com/FreeX-Studio/Freex-Media-Server">Freex-Media-Server</a>
+            <p>{{de}}Läuft auf einem Linux-Server oder einem Windows-PC, der durchläuft. Die Weboberfläche FreeX Web ist dabei, Sie können also in jedem Browser schauen.{{en}}Runs on a Linux server or a Windows PC that stays on. The FreeX Web interface comes with it, so you can watch in any browser.{{/}}</p>
+            <p class="platforms"><span>Linux</span><span>Windows</span></p>
+            <a class="app__link" href="https://github.com/FreeX-Studio/Freex-Media-Server">{{de}}Mehr auf GitHub{{en}}More on GitHub{{/}}</a>
           </article>
           <article class="app">
             <h3>FreeX TV</h3>
-            <p>{{de}}Startseite und Player für die Fernbedienung, mit dem eigenen Player des Fernsehers.{{en}}A home screen and player made for the remote, using the TV's own player.{{/}}</p>
-            <p class="platforms"><span>Samsung (Tizen)</span><span>LG (webOS)</span><span>Fire TV</span><span>Android TV</span></p>
-            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-TV-Apps">FreeX-TV-Apps</a>
+            <p>{{de}}Fürs Sofa gemacht: große Poster und eine Bedienung, die mit der Fernbedienung Spaß macht.{{en}}Made for the couch: big posters and navigation that works well with the remote.{{/}}</p>
+            <p class="platforms"><span>Samsung</span><span>LG</span><span>Fire TV</span><span>Android TV</span></p>
+            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-TV-Apps">{{de}}Mehr auf GitHub{{en}}More on GitHub{{/}}</a>
           </article>
           <article class="app">
             <h3>FreeX Mobile</h3>
-            <p>{{de}}Ein Player für Touch: Doppeltippen zum Springen, Bild-in-Bild und AirPlay auf iOS.{{en}}A player made for touch: double tap to jump, picture in picture, and AirPlay on iOS.{{/}}</p>
-            <p class="platforms"><span>iPhone</span><span>iPad</span><span>{{de}}Android-Smartphones und -Tablets{{en}}Android phones and tablets{{/}}</span></p>
-            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-Mobile">FreeX-Mobile</a>
+            <p>{{de}}Doppeltippen zum Vorspulen, Bild-in-Bild nebenbei und auf dem iPhone per AirPlay auf den Fernseher.{{en}}Double-tap to skip ahead, keep watching in picture-in-picture, and send it to the TV with AirPlay on iPhone.{{/}}</p>
+            <p class="platforms"><span>iPhone</span><span>iPad</span><span>Android</span></p>
+            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-Mobile">{{de}}Mehr auf GitHub{{en}}More on GitHub{{/}}</a>
           </article>
           <article class="app">
             <h3>FreeX Desktop</h3>
-            <p>{{de}}FreeX Web im eigenen Fenster, spielt jede Datei direkt mit mpv. Mit TV-Modus, der den PC zur FreeX-Box am Fernseher macht.{{en}}FreeX Web in its own window, playing every file directly with mpv. With a TV mode that turns the PC into a FreeX box on the TV.{{/}}</p>
+            <p>{{de}}Spielt jede Datei direkt ab, ohne dass der Server sie umwandeln muss. Mit dem TV-Modus wird ein PC am Fernseher zur Medienbox.{{en}}Plays every file directly, without the server having to convert it. Its TV mode turns a PC next to the TV into a media box.{{/}}</p>
             <p class="platforms"><span>Windows</span><span>Linux</span><span>macOS</span></p>
-            <a class="app__link" href="https://github.com/FreeX-Studio/Freex-Desktop">Freex-Desktop</a>
+            <a class="app__link" href="https://github.com/FreeX-Studio/Freex-Desktop">{{de}}Mehr auf GitHub{{en}}More on GitHub{{/}}</a>
           </article>
           <article class="app">
             <h3>{{de}}FreeX für Kodi{{en}}FreeX for Kodi{{/}}</h3>
-            <p>{{de}}Ihre Bibliotheken wie eine Kodi-Bibliothek, abgespielt mit Kodis eigenem Player – inklusive Intro überspringen und Up Next.{{en}}Your libraries like a Kodi library, played with Kodi's own player – including skip intro and Up Next.{{/}}</p>
-            <p class="platforms"><span>Kodi 20+</span><span>LibreELEC</span><span>CoreELEC</span><span>Raspberry Pi</span></p>
-            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-Kodi-Addon">FreeX-Kodi-Addon</a>
+            <p>{{de}}Sie nutzen schon Kodi? Das Add-on holt Ihre FreeX-Bibliothek dorthin, samt Intro überspringen.{{en}}Already using Kodi? The add-on brings your FreeX library into it, skip intro included.{{/}}</p>
+            <p class="platforms"><span>Kodi 20+</span><span>LibreELEC</span><span>CoreELEC</span></p>
+            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-Kodi-Addon">{{de}}Mehr auf GitHub{{en}}More on GitHub{{/}}</a>
           </article>
           <article class="app">
             <h3>FreeXHT</h3>
-            <p>{{de}}Ein System-Image: Die Box startet direkt in die FreeX-TV-Oberfläche, mit mpv als Player und der TV-Fernbedienung über HDMI-CEC.{{en}}A system image: the box boots straight into the FreeX TV interface, with mpv as player and the TV remote over HDMI-CEC.{{/}}</p>
-            <p class="platforms"><span>Raspberry Pi 4 / 5</span><span>PC (x86_64)</span></p>
-            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-HT">FreeX-HT</a>
+            <p>{{de}}Für eine Box unterm Fernseher: Image auf eine SD-Karte schreiben, und der Raspberry Pi oder PC startet direkt in FreeX. Bedient wird mit der TV-Fernbedienung.{{en}}For a box under the TV: write the image to an SD card and the Raspberry Pi or PC boots straight into FreeX. You control it with your TV remote.{{/}}</p>
+            <p class="platforms"><span>Raspberry Pi</span><span>PC</span></p>
+            <a class="app__link" href="https://github.com/FreeX-Studio/FreeX-HT">{{de}}Mehr auf GitHub{{en}}More on GitHub{{/}}</a>
           </article>
-        </div>
-
-        <div class="pair">
-          <figure>
-            <img src="{{base}}assets/screens/kodi-show.jpg" width="1280" height="720" loading="lazy" alt="{{de}}FreeX für Kodi: Serienseite mit „Fortsetzen S1 E1“{{en}}FreeX for Kodi: a show page with Resume S1 E1{{/}}">
-            <figcaption>{{de}}FreeX für Kodi{{en}}FreeX for Kodi{{/}}</figcaption>
-          </figure>
-          <figure>
-            <img src="{{base}}assets/screens/kodi-library.jpg" width="1280" height="720" loading="lazy" alt="{{de}}FreeX für Kodi: eine Bibliothek mit Filtern{{en}}FreeX for Kodi: a library with filters{{/}}">
-            <figcaption>{{de}}Bibliothek mit Filtern in Kodi{{en}}A library with filters in Kodi{{/}}</figcaption>
-          </figure>
         </div>
       </div>
     </section>
 
     <section id="more" class="section">
       <div class="wrap">
-        <h2 class="section__title">{{de}}Noch mehr Wege zum Schauen.{{en}}Even more ways to watch.{{/}}</h2>
+        <h2 class="section__title">{{de}}Es geht auch ohne FreeX-App{{en}}No FreeX app? No problem{{/}}</h2>
         <div class="ways">
           <article>
             <h3>{{de}}Jellyfin-Apps{{en}}Jellyfin apps{{/}}</h3>
-            <p>{{de}}Mit der optionalen Jellyfin-Schicht nutzen Apps wie <strong>Swiftfin</strong> und <strong>Streamyfin</strong> (iPhone, iPad, Apple TV), <strong>Findroid</strong> (Android) und <strong>Jellyfin für Android TV</strong> Ihren FreeX-Server – mit demselben Konto und Fortschritt. Auf Apple-Geräten ist das der empfohlene Weg.{{en}}With the optional Jellyfin layer, apps such as <strong>Swiftfin</strong> and <strong>Streamyfin</strong> (iPhone, iPad, Apple TV), <strong>Findroid</strong> (Android) and <strong>Jellyfin for Android TV</strong> use your FreeX server – with the same account and progress. On Apple devices this is the recommended way.{{/}}</p>
+            <p>{{de}}Schalten Sie in den Einstellungen die Jellyfin-Unterstützung ein, dann verbinden sich auch <strong>Swiftfin</strong>, <strong>Streamyfin</strong>, <strong>Findroid</strong> und <strong>Jellyfin für Android TV</strong> mit FreeX. Auf iPhone, iPad und Apple TV ist das der einfachste Weg.{{en}}Turn on Jellyfin support in the settings and <strong>Swiftfin</strong>, <strong>Streamyfin</strong>, <strong>Findroid</strong> and <strong>Jellyfin for Android TV</strong> can connect to FreeX too. On iPhone, iPad and Apple TV that's the easiest way.{{/}}</p>
           </article>
           <article>
             <h3>DLNA</h3>
-            <p>{{de}}Smart-TVs, Konsolen und Player im Heimnetz finden den Server von selbst – ganz ohne App.{{en}}Smart TVs, consoles and players in the home network find the server on their own – no app needed.{{/}}</p>
+            <p>{{de}}Viele Smart-TVs und Konsolen sehen FreeX im Heimnetz sofort.{{en}}Many smart TVs and consoles see FreeX on your home network right away.{{/}}</p>
           </article>
           <article>
             <h3>Chromecast</h3>
-            <p>{{de}}Aus Chrome auf den Fernseher streamen, mit dem Browser als Fernbedienung.{{en}}Cast from Chrome to the TV, with the browser as remote control.{{/}}</p>
+            <p>{{de}}Aus FreeX Web in Chrome direkt auf den Fernseher.{{en}}Cast from FreeX Web in Chrome straight to your TV.{{/}}</p>
           </article>
         </div>
-        <p class="note">{{de}}FreeX Mobile für iPhone und iPad sowie FreeX TV für Samsung und LG sind nicht in den App Stores und lassen sich nur per Sideloading installieren. Ohne Sideloading nehmen Sie auf Apple-Geräten eine Jellyfin-App und auf Samsung-TVs DLNA.{{en}}FreeX Mobile for iPhone and iPad and FreeX TV for Samsung and LG are not in the app stores and can only be installed by sideloading. Without sideloading, use a Jellyfin app on Apple devices and DLNA on Samsung TVs.{{/}}</p>
+        <p class="note">{{de}}FreeX Mobile fürs iPhone und FreeX TV für Samsung und LG gibt es nicht in den App Stores, sie müssen per Sideloading installiert werden. Wem das zu umständlich ist: auf Apple-Geräten eine Jellyfin-App, auf Samsung-TVs DLNA.{{en}}FreeX Mobile for iPhone and FreeX TV for Samsung and LG aren't in the app stores, so they have to be sideloaded. If that's too much hassle: use a Jellyfin app on Apple devices and DLNA on Samsung TVs.{{/}}</p>
       </div>
     </section>
 
     <section id="download" class="section section--glow">
       <div class="wrap">
         <h2 class="section__title">{{de}}Herunterladen{{en}}Download{{/}}</h2>
-        <p class="section__intro">{{de}}Zuerst kommt der Server. Danach melden Sie sich mit jeder FreeX-App an – Adresse eingeben (z.&nbsp;B. <code>192.168.1.10</code>, Port <code>32500</code>), fertig.{{en}}Start with the server. Then sign in from any FreeX app – enter the address (e.g. <code>192.168.1.10</code>, port <code>32500</code>) and you're done.{{/}}</p>
+        <p class="section__intro">{{de}}Erst den Server installieren, dann in jeder App mit seiner Adresse anmelden – zum Beispiel <code>192.168.1.10</code> und Port <code>32500</code>.{{en}}Install the server first, then sign in from any app with its address – for example <code>192.168.1.10</code> and port <code>32500</code>.{{/}}</p>
 
         <div class="server">
           <div class="server__head">
@@ -184,7 +172,7 @@
           <div class="server__body">
             <div class="install">
               <h4>Debian 12+ / Ubuntu 22.04+</h4>
-              <p>{{de}}Aus der MirraNET-Paketquelle – ffmpeg kommt automatisch mit, Updates mit <code>sudo apt upgrade</code>.{{en}}From the MirraNET package repository – ffmpeg comes along, updates arrive with <code>sudo apt upgrade</code>.{{/}}</p>
+              <p>{{de}}Paketquelle einmal hinzufügen, danach kommen Updates mit den normalen Systemupdates.{{en}}Add the package source once – after that, updates come with your normal system updates.{{/}}</p>
               <div class="code">
                 <button class="code__copy" type="button" data-copy>{{de}}Kopieren{{en}}Copy{{/}}</button>
 <pre><code>sudo install -d /etc/apt/keyrings
@@ -194,13 +182,13 @@ echo "deb [signed-by=/etc/apt/keyrings/mirranet.gpg] https://apt.mirranet.de sta
     | sudo tee /etc/apt/sources.list.d/mirranet.list
 sudo apt update &amp;&amp; sudo apt install freex-media-server</code></pre>
               </div>
-              <p class="small">{{de}}Danach <code>http://&lt;ihr-server&gt;:32500/</code> öffnen, das Admin-Konto anlegen und Ihre Film- und Serienordner hinzufügen.{{en}}Then open <code>http://&lt;your-server&gt;:32500/</code>, create the admin account and add your movie and TV show folders.{{/}}</p>
+              <p class="small">{{de}}Danach <code>http://&lt;ihr-server&gt;:32500/</code> öffnen, ein Konto anlegen (das erste ist der Admin) und Ihre Ordner hinzufügen.{{en}}Then open <code>http://&lt;your-server&gt;:32500/</code>, create an account (the first one is the admin) and add your folders.{{/}}</p>
             </div>
             <div class="install">
               <h4>Windows 10 / 11</h4>
-              <p>{{de}}Der Installer bringt ffmpeg mit, richtet einen Windows-Dienst ein und öffnet am Ende die Weboberfläche.{{en}}The installer brings ffmpeg along, sets up a Windows service and opens the web interface when it's done.{{/}}</p>
+              <p>{{de}}Der Installer bringt alles mit und lässt FreeX im Hintergrund laufen, auch ohne dass jemand angemeldet ist.{{en}}The installer includes everything and keeps FreeX running in the background, even when nobody is signed in.{{/}}</p>
               <a class="btn btn--primary" data-repo="server" data-asset="win" href="https://github.com/FreeX-Studio/Freex-Media-Server/releases">{{de}}Setup herunterladen{{en}}Download setup{{/}}</a>
-              <p class="small">{{de}}Der Installer ist noch nicht signiert. Zeigt Windows „Der Computer wurde durch Windows geschützt“, klicken Sie auf <em>Weitere Informationen</em> und dann <em>Trotzdem ausführen</em>.{{en}}The installer isn't code-signed yet. If Windows shows “Windows protected your PC”, click <em>More info</em> and then <em>Run anyway</em>.{{/}}</p>
+              <p class="small">{{de}}Warnt Windows beim Start, klicken Sie auf <em>Weitere Informationen</em> und dann <em>Trotzdem ausführen</em> – der Installer ist noch nicht signiert.{{en}}If Windows warns you, click <em>More info</em> and then <em>Run anyway</em> – the installer isn't signed yet.{{/}}</p>
             </div>
           </div>
         </div>
@@ -237,7 +225,7 @@ sudo apt update &amp;&amp; sudo apt install freex-media-server</code></pre>
             <h4>{{de}}FreeX für Kodi{{en}}FreeX for Kodi{{/}}</h4>
             <p class="version" data-release-status="kodi"></p>
             <ul>
-              <li><span>Kodi 20+</span><a data-repo="kodi" data-asset="zip" href="https://github.com/FreeX-Studio/FreeX-Kodi-Addon/releases">{{de}}Add-on (.zip){{en}}Add-on (.zip){{/}}</a></li>
+              <li><span>Kodi 20+</span><a data-repo="kodi" data-asset="zip" href="https://github.com/FreeX-Studio/FreeX-Kodi-Addon/releases">Add-on (.zip)</a></li>
             </ul>
             <p class="small">{{de}}In Kodi: <em>Einstellungen › Add-ons › Aus ZIP-Datei installieren</em>.{{en}}In Kodi: <em>Settings › Add-ons › Install from zip file</em>.{{/}}</p>
           </article>
@@ -245,10 +233,10 @@ sudo apt update &amp;&amp; sudo apt install freex-media-server</code></pre>
             <h4>FreeXHT</h4>
             <p class="version" data-release-status="ht"></p>
             <ul>
-              <li><span>Raspberry Pi 3 / 4 / 5</span><a data-repo="ht" data-asset="rpi" href="https://github.com/FreeX-Studio/FreeX-HT/releases">.img.xz</a></li>
-              <li><span>PC (x86_64, UEFI)</span><a data-repo="ht" data-asset="x86" href="https://github.com/FreeX-Studio/FreeX-HT/releases">.img.xz</a></li>
+              <li><span>Raspberry Pi</span><a data-repo="ht" data-asset="rpi" href="https://github.com/FreeX-Studio/FreeX-HT/releases">.img.xz</a></li>
+              <li><span>PC</span><a data-repo="ht" data-asset="x86" href="https://github.com/FreeX-Studio/FreeX-HT/releases">.img.xz</a></li>
             </ul>
-            <p class="small">{{de}}Mit dem Raspberry Pi Imager oder balenaEtcher auf SD-Karte oder USB-Stick schreiben. Auf dem Pi 3 läuft die Oberfläche spürbar langsamer.{{en}}Write it to an SD card or USB stick with Raspberry Pi Imager or balenaEtcher. On a Pi 3 the interface is noticeably laggy.{{/}}</p>
+            <p class="small">{{de}}Mit dem Raspberry Pi Imager oder balenaEtcher schreiben. Am besten läuft es ab dem Pi 4.{{en}}Write it with Raspberry Pi Imager or balenaEtcher. It runs best on a Pi 4 or newer.{{/}}</p>
           </article>
         </div>
       </div>

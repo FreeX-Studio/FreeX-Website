@@ -29,7 +29,7 @@ rm -f "$screens"/*
 for s in home library movie show; do
   cp "$SRC_DIR/server/docs/screenshots/$s.png" "$screens/web-$s.png"
 done
-for s in home library show; do
+for s in home; do
   cp "$SRC_DIR/kodi/docs/screenshots/$s.jpg" "$screens/kodi-$s.jpg"
 done
 

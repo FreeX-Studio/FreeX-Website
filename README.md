@@ -28,7 +28,7 @@ Logos, screenshots and release information are **not** stored in this repository
 | --- | --- | --- |
 | Logo, app icon, social preview | [Freex-Media-Server](https://github.com/FreeX-Studio/Freex-Media-Server) `docs/brand/` | `site/assets/brand/` |
 | Screenshots of FreeX Web | Freex-Media-Server `docs/screenshots/{home,library,movie,show}.png` | `site/assets/screens/web-*.png` |
-| Screenshots of FreeX for Kodi | [FreeX-Kodi-Addon](https://github.com/FreeX-Studio/FreeX-Kodi-Addon) `docs/screenshots/{home,library,show}.jpg` | `site/assets/screens/kodi-*.jpg` |
+| Screenshots of FreeX for Kodi | [FreeX-Kodi-Addon](https://github.com/FreeX-Studio/FreeX-Kodi-Addon) `docs/screenshots/home.jpg` | `site/assets/screens/kodi-*.jpg` |
 | Latest release of every app (version, date, download links) | GitHub Releases API of Freex-Media-Server, Freex-Desktop, FreeX-TV-Apps, FreeX-Mobile, FreeX-Kodi-Addon, FreeX-HT | `site/release.json` |
 
 The workflow [`deploy.yml`](.github/workflows/deploy.yml) builds the pages, runs [`scripts/sync-freex.sh`](scripts/sync-freex.sh) and publishes `site/` to GitHub Pages:
